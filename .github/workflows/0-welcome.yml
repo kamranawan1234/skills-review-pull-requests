@@ -25,7 +25,7 @@ jobs:
     name: Check current step number
     runs-on: ubuntu-latest
     steps:iji
-      - name: Checkout
+      - name: Checkoutdwdw
         uses: actions/checkout@v5
       - id: get_step
         run: |
