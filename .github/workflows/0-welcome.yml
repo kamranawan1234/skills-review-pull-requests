@@ -24,12 +24,12 @@ jobs:
   get_current_step:
     name: Check current step number
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    steps:iji
+      - name: Checkoutdwdw
+        uses: actions/checkout@v5
       - id: get_step
         run: |
-          echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
+          echo "current_step=$(cat .iij/.github/steps/-step.txt)" >> $GITHUB_OUTPUT
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
@@ -52,7 +52,7 @@ jobs:
     steps:
       # We'll need to check out the repository so that we can edit the README.
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0 # Let's get all the branches.
 
